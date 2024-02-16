@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="/stylesheets/createpost.css">
+    <link rel="stylesheet" href="/stylesheets/landingnav.css">
+
+</head>
+<body>
+  <nav class="nav flex">
+    <div class="pinterestLogo flex">
+        <img src="https://th.bing.com/th/id/R.3639520dcb77f1833e0c78048c1adea7?rik=LCcgwf1etaFPQg&riu=http%3a%2f%2fwww.thebookwheelblog.com%2fwp-content%2fuploads%2f2014%2f05%2fTransparent-Pinterest-Logo-Icon-660x660.png&ehk=kdRBaT416hFOT%2bjhyNfiqc0b4GbDKJW%2btmoMPQEDUks%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <h3>Pinterest</h3>
+        <div class="about">About</div>
+    </div>
+    <div class="accounts flex">
+      <a href="/feed" class="feed" style="color: black;">Feed</a>
+      <a href="/profile" class="profile" style="color: black;">Profile</a>
+   <div class="logout flex">
+    <a href="/logout">Logout</a>
+   </div>
+    </div>
+        </nav>
+
+  <div class="upload-container">
+    <!-- <img src="/images/index.jpg" alt="" class="uploadedImg"> -->
+        <form action="/upload" method="post" enctype="multipart/form-data" class="inputs flex">
+          <h1 class="heading">Create Pin</h1>
+            <label for="title">Title</label>
+            <input type="text" class="postTitle" name="postTitle" placeholder="Add Title" required>
+            <label for="description">Description</label>
+            <textarea  placeholder="Add Description" name="postDescription" ></textarea>
+            <div class="fileWrapper flex">
+              Choose File
+            <input type="file"   name="post" class="file " required></div>
+            <div class="submitBtn"><button type="submit" class="btn flex">Submit</button></div>
+            
+        </form>
+      </div>
+    
+</body>
+</html>

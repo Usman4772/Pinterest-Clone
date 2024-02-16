@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    padding: 1rem  0;
+    font-size:3.5rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #e0163e;
+
+}
+.upload-container{
+    width: 100%;
+    height:100% ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+    background: url("https://img.freepik.com/free-vector/blogging-concept-illustration_114360-1038.jpg?w=740&t=st=1706266510~exp=1706267110~hmac=d28c2b50e65be338b3f42098653bead8556136d0c110ca697ea2aa312bf92e10");
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+.upload-container img{
+    width: 20%;
+    height: 50%;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+.inputs{
+    width: 400px;
+    height: 80%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    border: 1px solid #dad4d4;
+    gap: .4rem;
+    /* box-shadow: 0 0 5px #d37285;; */
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    top: 7%;
+    padding: 0 2rem;
+}
+label{
+    font-size: 2.2rem;
+    margin: .7rem 0;
+    font-weight: 700;
+}
+.postTitle{
+    padding: 0 1rem;
+    border: 1px solid rgb(74, 72, 72);
+    border-radius: 1rem;
+    outline: none;
+    width: 30rem;
+    height: 4rem;
+    font-size: 15px;
+    font-weight: 700;
+}
+.inputs textarea{
+    resize: none;
+    min-height: 8rem;
+    width: 30rem;
+    padding: 1rem;
+    
+}
+.inputs .fileWrapper{
+    width: 15rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: .4rem;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 2.3rem;
+
+}
+.fileWrapper .file{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+a{
+    text-decoration: none;
+}
+.submitBtn{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+
+}
+.btn{
+    background-color: #e0163e;
+    color: white;
+    border-radius: .5rem;
+    font-weight: 700;
+   padding: .7rem 3rem;
+   border: none;
+   cursor: pointer;
+   outline: none;
+    transition: all ease .7s;
+}
+.btn:hover{
+    background-color: #ba1637;
+}
+

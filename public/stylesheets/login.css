@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+
+}
+.body{
+    display: flex;
+    justify-content: flex-end;
+    background: url("https://img.freepik.com/free-vector/hand-drawn-man-working-from-home_23-2148818123.jpg?w=740&t=st=1706264870~exp=1706265470~hmac=0b5fccc011fc7c51675d40aa2c0bad1b56dd771b5691c7a49efc53a7802d9786");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding: 0 5rem;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 30vw;
+    height: 75vh;
+    background-color: white;
+    border-radius: .8rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    gap: .7rem;
+    box-shadow: 0 0 1px black;
+}
+.wrapper img{
+    width: 6rem;
+    height: 6rem;
+
+}
+.heading{
+    font-size: 2rem;
+
+}
+.heading span{
+    color: #e0163e;
+}
+.inputs{
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+label{
+    font-size: 1.6rem;
+    margin: .7rem 0;
+    font-weight: 700;
+}
+input{
+    padding: 0 1rem;
+    border:1px solid rgb(74, 72, 72) ;
+    border-radius: 1rem;
+    outline: none;
+    width: 25rem;
+    height: 3rem;
+
+}
+a{
+    text-decoration: none;
+}
+.registerBtn{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn{
+    background-color: #e0163e;
+    color: white;
+    border-radius: .5rem;
+    font-weight: 700;
+   padding: 1rem 3rem;
+   border: none;
+   cursor: pointer;
+   outline: none;
+ 
+}
+
+.singin{
+    font-size: 1.3rem;
+  
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest | Feed </title>
+    <link rel="stylesheet" href="/stylesheets/show.css">
+    <link rel="stylesheet" href="/stylesheets/landingnav.css">
+    <style>
+.card{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+  <!-- <nav class="nav-container">
+    <span class="logo">PINTEREST</span>
+   <div class="nav-links">
+    <a href="/feed">Feed</a><a href="/profile">Profile</a><a href="/logout" class="logoutBtn">Logout</a>
+  </div>
+  </nav> -->
+  <nav class="nav flex">
+    <div class="pinterestLogo flex">
+        <img src="https://th.bing.com/th/id/R.3639520dcb77f1833e0c78048c1adea7?rik=LCcgwf1etaFPQg&riu=http%3a%2f%2fwww.thebookwheelblog.com%2fwp-content%2fuploads%2f2014%2f05%2fTransparent-Pinterest-Logo-Icon-660x660.png&ehk=kdRBaT416hFOT%2bjhyNfiqc0b4GbDKJW%2btmoMPQEDUks%3d&risl=&pid=ImgRaw&r=0" alt="">
+        <h3>Pinterest</h3>
+        <div class="about">About</div>
+    </div>
+    <div class="accounts flex">
+      <a href="/feed" class="feed" style="color: black;">Feed</a>
+      <a href="/profile" class="profile" style="color: black;">Profile</a>
+   <div class="logout flex">
+    <a href="/logout">Logout</a>
+   </div>
+    </div>
+        </nav>
+  <div class="cards">
+    <% posts.forEach((post)=>{%>
+      <a href="/saved/post/<%=post._id%>" class="card">
+        <img src="/images/uploads/<%=post.image%>" class="card-img-top" alt="...">
+      </a>
+    <%})%>
+  </div>
+</body>
+</html>         
